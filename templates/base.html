@@ -14,9 +14,11 @@
     {% endblock %}
 
     {% block corecss %}
-    <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="queries.css" />
+    <link rel="stylesheet" href="{% static 'css/general.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/queries.css' %}">
+    
     {% endblock %}
 
     {% block extra_css %}
@@ -45,7 +47,23 @@
           </div>
           <div class="logo">Curology</div>
           <div class="header-links">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <a><i class="fa-solid fa-cart-shopping"></i></a>
+            <!--
+
+            <div class="" aria-labelledby="">
+                {% if request.user.is_authenticated %}
+                    {% if request.user.is_superuser %}
+                        <a href="" class="dropdown-item">Product Management</a>
+                    {% endif %}
+                    <a href="" class="dropdown-item">My Profile</a>
+                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                {% else %}
+                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                {% endif %}
+            </div>
+            -->
+
             <i class="fa-solid fa-user-large"></i>
           </div>
         </div>
