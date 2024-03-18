@@ -50,16 +50,20 @@ HEADER-SECTION
     margin-top: 2.4rem;
     right: 100%;
     transform: translate(2rem, 0);
-    width: 20rem;
+    width: 24rem;
     z-index: 1;
     border: #6c6c6c 1px solid;
     display: none; /* changed to flex on-click */
     gap: 2.8rem;
     padding: 3.2rem 1.6rem;
+    background-color: #332f54;
+    background-color: #fff;
+
   }
   
   .dropdown-content a {
-    color: black;
+    color: #fff;
+    color: #332f54;
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: .06rem;
