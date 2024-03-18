@@ -1,0 +1,37 @@
+/*
+****************************
+HERO-SECTION
+****************************
+*/
+
+.section-hero {
+    height: calc(100vh - 6.4rem);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#b6abc9, #b8aec9, #a899bf, #9b8db5);
+}
+
+.hero-text-container {
+    padding: 0 6.4rem;
+}
+  
+.hero-description {
+    color: #332f54;
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+  
+.hero-img-container {
+    width: 100%;
+}
+
+.hero-img {
+    width: 100%;
+    height: calc(100vh - 6rem);
+    object-fit: cover;
+    object-position: 0 40%;
+}

@@ -16,12 +16,10 @@
     {% block corecss %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/general.css' %}">
-    
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link rel="stylesheet" href="{% static 'css/queries.css' %}">
-    
-   
-    
+
     {% endblock %}
 
     {% block extra_css %}
@@ -47,30 +45,16 @@
 <body>
     <header class="header">
         <div class="header-container">
-          <div class="header-links">
-            <p class="header-link">Products</p>
-          </div>
+
+          
+            <a class="header-links">Products</a>
+   
+
           <div class="logo">Curology</div>
-          <div class="header-links">
+
+          <div class="header-links header-links--right">
             <a><i class="fa-solid fa-cart-shopping"></i></a>
-            <!--
-
-            <div class="" aria-labelledby="">
-                {% if request.user.is_authenticated %}
-                    {% if request.user.is_superuser %}
-                        <a href="" class="dropdown-item">Product Management</a>
-                    {% endif %}
-                    <a href="" class="dropdown-item">My Profile</a>
-                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                {% else %}
-                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                {% endif %}
-            </div>
-            -->
         
-
-
             <div class="dropdown">
               <i onclick="myFunction()" class="fa-solid fa-user-large dropbtn"></i>
               <div id="myDropdown" class="dropdown-content">

@@ -1,12 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_css %}
 
+{% block extra_css %}
 
 {% endblock %}
 
 
 {% block content %}
- 
+<section class="section-hero">
+    <div class="hero-text-container">
+      <h1 class="heading-primary">Your Skin Transformed</h1>
+      <p class="hero-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus atque
+        molestiae pariatur provi
+      </p>
+      <a href="#" class="btn btn--cta margin-right-sm">New skin today</a>
+    </div>
+    <div class="hero-img-container">
+      <img src="{% static 'images/hero-img.jpg' %}" alt="" class="hero-img" />
+      
+      
+
+    </div>
+  </section>
 {% endblock %}
