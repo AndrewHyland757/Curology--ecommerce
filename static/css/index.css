@@ -38,6 +38,125 @@
     object-position: 0 40%;
 }
 
+/**************************/
+/* SECTION HOW */
+/**************************/
+
+.section-how {
+    padding: 9.6rem 0;
+    background-color: #e2e0d3;
+  }
+  
+  .how-container {
+    margin: 0 auto;
+    max-width: 1350px;
+    padding: 0 3.2rem;
+    display: flex;
+    gap: 2.5%;
+  }
+  
+  .step--active {
+    width: 48.75%;
+  }
+  
+  .step--hidden {
+    width: 16.25%;
+  }
+  
+  .step-img-container {
+    width: 100%;
+  }
+  
+  .step--active .step-img-container {
+    padding-bottom: 49.96%;
+    position: relative;
+  }
+  
+  .step--hidden .step-img-container {
+    padding-bottom: 150%;
+    position: relative;
+  }
+  
+  .step--hidden .step-text-box p:nth-of-type(2) {
+    display: none;
+  }
+  
+  .step--hidden .step-text-box .step-description-container {
+    display: none;
+  }
+  
+  .how-img-1,
+  .how-img-2,
+  .how-img-3,
+  .how-img-4 {
+    background-color: ;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+  
+  /* step-images position edit */
+  .how-img-1 {
+    object-position: 0 25%;
+  }
+  
+  .how-img-2 {
+    object-position: 100 50%;
+  }
+  
+  .how-img-3 {
+    object-position: 0 25%;
+  }
+  
+  .how-img-4 {
+    object-position: 0 25%;
+  }
+  
+  /* step-images position edit after on-click event */
+  
+  .step--active .how-img-2 {
+    object-position: 0 50%;
+  }
+  .step--active .how-img-3 {
+    object-position: 0 100%;
+  }
+  
+  .step-text-box {
+    margin: 1.6rem 0 0 0;
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+  }
+  
+  .step-icon-container {
+    display: none;
+  }
+  .step-number-title-container {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .step-number {
+    font-weight: 600;
+    color: #cccced;
+    background-color: ;
+    line-height: ;
+    font-size: 7.4rem;
+    background-color: ;
+  }
+  
+  .heading-tertiary {
+    padding-top: 0.5rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  
+    background-color: ;
+  }
+  .step-text-description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
 
 /**************************/
 /* SECTION SIGN-UP */
