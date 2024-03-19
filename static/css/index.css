@@ -1,12 +1,12 @@
-/*
-****************************
-HERO-SECTION
-****************************
-*/
+
+/****************************/
+/* HERO-SECTION */
+/****************************/
+
 
 .section-hero {
     height: calc(100vh - 6.4rem);
-    width: 100vw;
+    max-width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
@@ -16,6 +16,7 @@ HERO-SECTION
 
 .hero-text-container {
     padding: 0 6.4rem;
+    
 }
   
 .hero-description {
@@ -27,6 +28,7 @@ HERO-SECTION
   
 .hero-img-container {
     width: 100%;
+   
 }
 
 .hero-img {
@@ -66,3 +68,105 @@ HERO-SECTION
     margin-bottom: 1.8rem;
 }
 
+
+/**************************/
+/* SECTION TESTIMONIALS */
+/**************************/
+
+.section-testimonials {
+    padding: 9.6rem 0;
+}
+  
+.testimonials-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.testimonials-img-box {
+    height: 95vh;
+    width: 100%;
+}
+
+.testimonials-img-box img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: 0 65%;
+    
+}
+
+.testimonials-container-right {
+    padding: 0 9.6rem;
+}
+
+.testimonials-container-right .container {
+    padding: 0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 8rem;
+}
+
+.testimonial-img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+}
+.testimonial-name {
+    font-size: 1.6rem;
+    color: #6f6f6f;
+}
+
+/**************************/
+/* SECTION PRODUCTS */
+/**************************/
+
+.section-products {
+  padding: 9.6rem 0;
+  background-color: #eaeeff;
+}
+
+.products-grid-container {
+  margin: 0 auto;
+  max-width: 1350px;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #eaeeff;
+  padding: 2rem;
+  column-gap: 2rem;
+  row-gap: 6.4rem;
+  align-items: center;
+}
+
+.products-img {
+  width: 100%;
+}
+.products-text-box {
+  padding: 1.6rem 0;
+}
+
+.products-title {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 0.75rem;
+}
+
+.products-description {
+  font-size: 1.6rem;
+  padding-bottom: 1.8rem;
+}
+
+.products-price {
+  font-size: 1.6rem;
+}
