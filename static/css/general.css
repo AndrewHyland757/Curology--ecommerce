@@ -97,20 +97,8 @@ BUTTON CLASSES
 
 .btn--cta:hover,
 .btn--cta:active {
-  color: #00a27c;
-  border: #00a27c 2px solid;
-}
-
-.btn--cta:hover,
-.btn--cta:active {
-  background-color: #fff;
-  color: #333;
-  border: #fff 2px solid;
-}
-
-.btn--cta:hover,
-.btn--cta:active {
   background-color: #332f54;
   color: #fff;
   border: #332f54 2px solid;
 }
+

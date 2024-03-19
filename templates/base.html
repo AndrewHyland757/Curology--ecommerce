@@ -45,16 +45,10 @@
 <body>
     <header class="header">
         <div class="header-container">
-
-          
-            <a class="header-links">Products</a>
-   
-
+          <a class="header-links">Products</a>
           <div class="logo">Curology</div>
-
           <div class="header-links header-links--right">
             <a><i class="fa-solid fa-cart-shopping"></i></a>
-        
             <div class="dropdown">
               <i onclick="myFunction()" class="fa-solid fa-user-large dropbtn"></i>
               <div id="myDropdown" class="dropdown-content">
@@ -84,6 +78,66 @@
 
     {% block content %}
     {% endblock %}
+
+    <footer class="footer">
+      <div class="subscribe-container">
+        <h2 class="subscribe-heading">
+          For updates on new products join our newsletter
+        </h2>
+        <div class="suscribe">
+          <form class="subscribe-form">
+            <input class="email-input" />
+            <button class="btn-footer margin-right-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+   
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-grid">
+        
+        <div class="footer-column-left">
+          <div class="help-column">
+            <p class="footer-heading">Get Help</p>
+            <ul class="footer-list">
+              <li class="footer-list-item">+00 576 9766432</li>
+              <li class="footer-list-item">info@curology.com</li>
+            </ul>
+          </div>
+
+          <div class="help-column">
+            <p class="footer-heading">Information</p>
+            <ul class="footer-list">
+              <li class="footer-list-item">FAQ</li>
+              <li class="footer-list-item">Shipping Information</li>
+              <li class="footer-list-item">Returns & Exchanges</li>
+              <li class="footer-list-item">Terms & Conditions</li>
+              <li class="footer-list-item">Store Locator</li>
+            </ul>
+          </div>
+
+          <div class="help-column">
+            <p class="footer-heading">About</p>
+            <ul class="footer-list">
+              <li class="footer-list-item">Our Story</li>
+              <li class="footer-list-item">Our Team and Culture</li>
+              <li class="footer-list-item">Planet Curology</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-column-right">
+          <div class="social-colmn-box">
+            <p class="footer-heading">Social</p>
+            <ul class="footer-list">
+              <li class="footer-list-item">09333655</li>
+              <li class="footer-list-item">09333655</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     {% block postloadjs %}
     {% endblock %}
