@@ -3,7 +3,7 @@
 
 
 {% block extra_css %}
-
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
 {% endblock %}
 
 
@@ -22,66 +22,6 @@
     </div>
   </section>
 
-  <sectiion class="section-testimonials">
-    <div class="testimonials-container">
-      <div class="testimonials-img-box">
-        <img src="{% static 'images/testimonial-section-img.jpg' %}" alt="">
-      </div>
-
-      <div class="testimonials-container-right">
-        <div class="container">
-          <span class="subheading-section">TESTIMONIALS</span>
-          <h2 class="heading-section">Real skin. Real results.</h2>
-        </div>
-
-        <div class="testimonials-grid">
-          <div class="testimonial">
-            <img class="testimonial-img" src="{% static 'images/customers/customer-1.jpg' %}" alt="">
-            <div class="testimonial-text-box">
-              <p class="testimonial-text">
-                Pure joy to use. I'm absoultely dumfounded with the results.
-                Thank you Curology.
-              </p>
-              <p class="testimonial-name">— Lucy Hatlington</p>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <img class="testimonial-img" src="{% static 'images/customers/customer-2.jpg' %}" alt="">
-            <div class="testimonial-text-box">
-              <p class="testimonial-text">
-                There is skincare and there is Curology. Honestly, it's been a
-                revelation.
-              </p>
-              <p class="testimonial-name">— Maddison McNulty</p>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <img class="testimonial-img" src="{% static 'images/customers/customer-3.jpg' %}" alt="">
-            <div class="testimonial-text-box">
-              <p class="testimonial-text">
-                My confidence came back 100 fold. What can I say, I literally
-                can't stop smiling from the results.
-              </p>
-              <p class="testimonial-name">— Vivian Muddleberry</p>
-          </div>
-          </div>
-
-          <div class="testimonial">
-            <img class="testimonial-img" src="{% static 'images/customers/customer-4.jpg' %}" alt="">
-            <div class="testimonial-text-box">
-              <p class="testimonial-text">
-                I have been reborn. It's amazing not to worry about my
-                skin anymore!
-              </p>
-              <p class="testimonial-name">— Annabel Babineaux</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </sectiion>
 
   <section class="section-sign-up">
         <div class="sign-up-container">
@@ -96,5 +36,163 @@
           <a href="#" class="btn btn--cta margin-right-sm">Sign up now</a>
         </div>
     </section>
+
+
+    <sectiion class="section-testimonials">
+      <div class="testimonials-container">
+        <div class="testimonials-img-box">
+          <img src="{% static 'images/testimonial-section-img.jpg' %}" alt="">
+        </div>
+  
+        <div class="testimonials-container-right">
+          <div class="container">
+            <span class="subheading-section">TESTIMONIALS</span>
+            <h2 class="heading-section">Real skin. Real results.</h2>
+          </div>
+  
+          <div class="testimonials-grid">
+            <div class="testimonial">
+              <img class="testimonial-img" src="{% static 'images/customers/customer-1.jpg' %}" alt="">
+              <div class="testimonial-text-box">
+                <p class="testimonial-text">
+                  Pure joy to use. I'm absoultely dumfounded with the results.
+                  Thank you Curology.
+                </p>
+                <p class="testimonial-name">— Lucy Hatlington</p>
+              </div>
+            </div>
+  
+            <div class="testimonial">
+              <img class="testimonial-img" src="{% static 'images/customers/customer-2.jpg' %}" alt="">
+              <div class="testimonial-text-box">
+                <p class="testimonial-text">
+                  There is skincare and there is Curology. Honestly, it's been a
+                  revelation.
+                </p>
+                <p class="testimonial-name">— Maddison McNulty</p>
+              </div>
+            </div>
+  
+            <div class="testimonial">
+              <img class="testimonial-img" src="{% static 'images/customers/customer-3.jpg' %}" alt="">
+              <div class="testimonial-text-box">
+                <p class="testimonial-text">
+                  My confidence came back 100 fold. What can I say, I literally
+                  can't stop smiling from the results.
+                </p>
+                <p class="testimonial-name">— Vivian Muddleberry</p>
+            </div>
+            </div>
+  
+            <div class="testimonial">
+              <img class="testimonial-img" src="{% static 'images/customers/customer-4.jpg' %}" alt="">
+              <div class="testimonial-text-box">
+                <p class="testimonial-text">
+                  I have been reborn. It's amazing not to worry about my
+                  skin anymore!
+                </p>
+                <p class="testimonial-name">— Annabel Babineaux</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sectiion>
+
+
+    <section class="section-products">
+
+      <div class="container">
+        <span class="subheading-section">TESTIMONIALS</span>
+        <h2 class="heading-section">Real skin. Real results.</h2>
+      </div>
+
+      <div class="products-grid-container">
+
+        <div class="products">
+          <div class="products-text-box">
+            <p class="products-title">The Formula</p>
+            <p class="products-description">Acne Clearing Treatment</p>
+            <p class="products-price">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa dicta ullam cumque a, esse perferendis atque quod nihil quaerat tempore unde corporis explicabo, ut nemo animi! Pariatur cumque aut delectus!
+            </p>
+          </div>
+        </div>
+
+        <div class="products">
+          <div class="products-img-container">
+            <img class="products-img" src="{% static 'images/products/product-1.jpg' %}" alt="">
+          </div>
+          <div class="products-text-box">
+            <p class="products-title">The Formula</p>
+            <p class="products-description">Acne Clearing Treatment</p>
+            <p class="products-price">€29.95/month</p>
+          </div>
+        </div>
+        <div class="products">
+          <div class="products-img-container">
+            <img class="products-img" src="{% static 'images/products/product-2.jpg' %}" alt="">
+          </div>
+          <div class="products-text-box">
+            <p class="products-title">Custom Formula</p>
+            <p class="products-description">Acne Clearing Treatment</p>
+            <p class="products-price">€29.95/month</p>
+          </div>
+        </div>
+        <div class="products">
+          <div class="products-img-container">
+            <img class="products-img" src="{% static 'images/products/product-3.jpg' %}" alt="">
+          </div>
+          <div class="products-text-box">
+            <p class="products-title">Custom Formula</p>
+            <p class="products-description">Acne Clearing Treatment</p>
+            <p class="products-price">€29.95/month</p>
+          </div>
+        </div>
+        
+        <div class="products products-line--2">
+          <div class="products-text-box">
+            <p class="products-title">The Formula</p>
+            <p class="products-description">Acne Clearing Treatment</p>
+            <p class="products-price">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis reprehenderit sequi, odit accusamus dolorum quasi voluptatem alias obcaecati pariatur dignissimos? In unde tenetur voluptatum reprehenderit qui fuga temporibus? Itaque, doloremque.
+            </p>
+          </div>
+        </div>
+        <div class="products">
+          <div class="products-img-container">
+            <img src="{% static 'images/products/product-4.jpg' %}" class="products-img" alt="">
+          </div>
+          <div class="products-text-box">
+            <p class="products-title">Custom Formula</p>
+            <p class="products-description">Acne Clearing Treatment</p>
+            <p class="products-price">€29.95/month</p>
+          </div>
+        </div>
+        <div class="products">
+          <div class="products-img-container">
+            <img class="products-img" src="{% static 'images/products/product-5.jpg' %}" alt="">
+          </div>
+          <div class="products-text-box">
+            <p class="products-title">Custom Formula</p>
+            <p class="products-description">Acne Clearing Treatment</p>
+            <p class="products-price">€29.95/month</p>
+          </div>
+        </div>
+        <div class="products">
+          <div class="products-img-container">
+            <img class="products-img" src="{% static 'images/products/product-6.jpg' %}" alt="">
+          </div>
+          <div class="products-text-box">
+            <p class="products-title">Custom Formula</p>
+            <p class="products-description">Acne Clearing Treatment</p>
+            <p class="products-price">€29.95/month</p>
+          </div>
+        </div>
+        
+      </div>
+      
+    </section>
+    
    
 {% endblock %}

@@ -6,3 +6,9 @@ def index(request):
     """ A view to return the index page """
 
     return render(request, 'home/index.html')
+
+
+def product(request):
+    """ A view to return the product page """
+    
+    return render(request, 'home/product.html')

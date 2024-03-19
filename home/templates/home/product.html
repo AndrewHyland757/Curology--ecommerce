@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/product.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<section class="section-product">
+    <div class="product-container">
+      <div class="product-img">
+        <img class="" src="images/products/product-1.jpg" alt="">
+      </div>
+      <div class="product-text-box">
+        <h2 class="heading-primary product-heading">Cleanser</h2>
+        <p class="product-description">Lightly foaming face wash</p>
+
+        <div class="product-info-container">
+          <div class="product-info">
+            <h2 class="product-text-heading">FORMULA</h2>
+            <p class="product-text">
+              Wash away dirt and excess oil without stripping skin or clogging
+              pores with the Cleanser. The lightly foaming, gel texture is
+              made for all skin types but is especially loved by those with
+              sensitive skin.
+            </p>
+          </div>
+          <div class="product-info">
+            <h2 class="product-text-heading">MADE WITH</h2>
+            <p class="product-text">
+              Maracuja Extract, a relaxing and calming agent for the skin. Its
+              high amount of antioxidants are known to help regenerate and
+              repair the skin. Particularly good for the delicate eye area.
+            </p>
+          </div>
+            <div class="product-info">
+              <h2 class="product-text-heading">MADE IN</h2>
+              <p class="product-text">Italy</p>
+            </div>
+          
+          <div class="product-info">
+          <p class="product-price">€29.95</p>
+        </div>
+        <div class="product-info">
+          <a href="#" class="btn btn--cta margin-right-sm">Select a size</a>
+          <a href="#" class="btn btn--cta margin-right-sm">Add to cart</a>
+        </div>
+</div>
+
+        </div>
+      </div>
+    
+  </section>
+{% endblock %}
