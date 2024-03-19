@@ -176,4 +176,15 @@ HEADER-SECTION
    flex-direction: column;
    gap: 1.6rem;
  }
+
+ .social-colmn-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
  
+.footer-list-item i {
+  font-size: 2rem;
+  text-align: center;
+
+}
