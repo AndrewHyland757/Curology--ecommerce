@@ -11,12 +11,12 @@
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     background-image: linear-gradient(#b6abc9, #b8aec9, #a899bf, #9b8db5);
 }
 
 .hero-text-container {
     padding: 0 6.4rem;
-    
 }
   
 .hero-description {
@@ -290,3 +290,7 @@
   font-size: 1.6rem;
 }
 
+.products-line {
+  padding-right: 4rem;
+  
+}

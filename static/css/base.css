@@ -5,6 +5,17 @@ HEADER-SECTION
 ****************************
 */
 
+.header a {
+  text-decoration: none;
+  color: #332f54;
+  transition: all 0.3s;
+}
+
+.header a:hover {
+  color: #5c5976;
+}
+
+
 .header {
     height: 6.4rem;
     width: 100%;
@@ -29,6 +40,7 @@ HEADER-SECTION
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
+    
 }
 
 .header-links {
