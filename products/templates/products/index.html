@@ -311,11 +311,12 @@
 
 
       <div class="products-grid-container">
-
+        
+       
         <div class="products category">
           <div class="products-text-box products-line">
-            <p class="products-title">The Formula</p>
-            <p class="products-description">Acne Clearing Treatment</p>
+            <p class="products-title">Set</p>
+            <p class="products-description">Lorem ipsum</p>
             <p class="products-price">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa dicta ullam cumque a, esse perferendis atque quod nihil quaerat tempore unde corporis explicabo, ut nemo animi! Pariatur cumque aut delectus!
             </p>
@@ -323,17 +324,20 @@
         </div>
 
         {% for product in my_products %}
+      
         <div class="products">
           <div class="products-img-container">
-            <img class="products-img" src="{{product.image.url}}" alt="">
+            <img class="products-img" src="{{ product.image.url }}" alt="">
           </div>
           <div class="products-text-box">
-            <a class="products-title">{{product.title}}</a>
+            <a href="{{ product.get_absolute_url }}" class="products-title">{{product.title}}</a>
             <p class="products-description">{{product.title}}</p>
             <p class="products-price">{{product.title}}</p>
           </div>
         </div>
+        
 
+       
         {% endfor %}
 
       </div>
