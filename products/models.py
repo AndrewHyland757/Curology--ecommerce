@@ -21,6 +21,8 @@ class Product(models.Model):
     category = models.ForeignKey(Category, related_name='product', on_delete=models.CASCADE)
     title = models.CharField(max_length=250)
     made_in = models.CharField(max_length=250,)
+    made_with = models.CharField(max_length=250,)
+    short_description = models.TextField(blank=False)
     description = models.TextField(blank=False)
     slug = models.SlugField(max_length=255)
     price = models.DecimalField(max_digits=4, decimal_places=2)

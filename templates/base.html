@@ -46,12 +46,17 @@
     <header class="header">
         <div class="header-container">
           
+          
           <a  href="#" class="header-links">Products</a>
+
+
+
           <a href="#" class="logo">Curology</a>
           <div class="header-links header-links--right">
             <a><i class="fa-solid fa-cart-shopping"></i></a>
             <div class="dropdown">
               <i onclick="myFunction()" class="fa-solid fa-user-large dropbtn"></i>
+
               <div id="myDropdown" class="dropdown-content">
                 {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
