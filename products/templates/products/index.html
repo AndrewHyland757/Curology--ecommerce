@@ -313,9 +313,14 @@
       <div class="products-grid-container">
         
        
+        
+
+        {% for category in my_catagories %}
+        
+
         <div class="products category">
           <div class="products-text-box products-line">
-            <p class="products-title">Set</p>
+            <p class="products-title">{{ category.name }}</p>
             <p class="products-description">Lorem ipsum</p>
             <p class="products-price">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa dicta ullam cumque a, esse perferendis atque quod nihil quaerat tempore unde corporis explicabo, ut nemo animi! Pariatur cumque aut delectus!
@@ -323,7 +328,9 @@
           </div>
         </div>
 
-        {% for product in my_products %}
+
+        {% for product in category.product.all %}
+            
       
         <div class="products">
           <div class="products-img-container">
@@ -335,10 +342,15 @@
             <p class="products-price">{{product.title}}</p>
           </div>
         </div>
+          
+        {% endfor %}
+
+        {% endfor %}
         
 
-       
-        {% endfor %}
+   
+        
+        
 
       </div>
       

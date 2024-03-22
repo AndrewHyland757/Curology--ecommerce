@@ -11,14 +11,12 @@ def index(request):
     all_products = Product.objects.all()
     all_categories = Category.objects.all()
 
-
+            
 
 
     context = {'my_products':all_products, 'my_catagories':all_categories}
 
     return render(request, 'products/index.html', context)
-
-
 
 
 
