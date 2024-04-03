@@ -305,24 +305,24 @@
     <section class="section-products">
 
       <div class="container">
-        <span class="subheading-section">TESTIMONIALS</span>
+        <span class="subheading-section">PRODUCTS</span>
         <h2 class="heading-section">Real skin. Real results.</h2>
       </div>
 
 
-      <div class="products-grid-container">
+      
         
        
         
 
         {% for category in my_catagories %}
-        
+        <div class="category-grid-container">
 
-        <div class="products category">
-          <div class="products-text-box products-line">
-            <p class="products-title">{{ category.name }}</p>
-            <p class="products-description">Lorem ipsum</p>
-            <p class="products-price">
+        <div class="category">
+          <div class="category-text-box">
+            <p class="category-title">{{ category.name }}</p>
+            <p class="category-description">Lorem ipsum</p>
+            <p class="category-description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa dicta ullam cumque a, esse perferendis atque quod nihil quaerat tempore unde corporis explicabo, ut nemo animi! Pariatur cumque aut delectus!
             </p>
           </div>
@@ -338,13 +338,13 @@
           </div>
           <div class="products-text-box">
             <a href="{{ product.get_absolute_url }}" class="products-title">{{product.title}}</a>
-            <p class="products-description">{{product.title}}</p>
-            <p class="products-price">{{product.title}}</p>
+            <p class="products-description">{{product.short_description}}</p>
+            <p class="products-price">€{{product.price}}</p>
           </div>
         </div>
           
         {% endfor %}
-
+</div>
         {% endfor %}
         
 
@@ -352,7 +352,7 @@
         
         
 
-      </div>
+      
       
     </section>
 
