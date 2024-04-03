@@ -288,8 +288,6 @@
 }
 
 
-
-
 .category-title {
   font-size: 2rem;
   font-weight: 500;
@@ -300,9 +298,11 @@
   font-weight: 500;
   text-decoration: none;
   color: #332f54;
-  
-  
-  
+  transition: all 0.3s;
+}
+
+.products-title:hover {
+  color: #5c5976;
 }
 
 .category-description,

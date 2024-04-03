@@ -161,19 +161,24 @@ HEADER-SECTION
    display: flex;
    justify-content: space-between;
  }
- .footer-column-left {
+ .footer-left {
    
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    column-gap: 7.2rem;
  }
  
- .footer-column-right {
+ .footer-right {
    
    display: flex;
    justify-content: end;
  }
  
+ .footer-column {
+  justify-content: flex-start;
+  background-color: pink;
+ }
+
  .footer-heading {
    
    font-size: 2rem;
@@ -181,22 +186,40 @@ HEADER-SECTION
    margin-bottom: 2.4rem;
    
  }
+ 
  .footer-list {
    list-style: none;
    font-size: 1.4rem;
    display: flex;
    flex-direction: column;
    gap: 1.6rem;
+   align-items: flex-start;
+ }
+
+ .footer-list-item{
+  margin: 0 auto;
+  
+  
+  background-color: aqua;
+  margin-left: 0;
  }
 
  .social-colmn-box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: aquamarine;
+ }
+
+ .social-colmn-box .footer-list {
+  background-color: bisque;
+  
  }
  
-.footer-list-item i {
+ .social-colmn-box .footer-list .footer-list-item {
   font-size: 2rem;
+  margin: 0 auto;
   text-align: center;
-
+  
+  
 }

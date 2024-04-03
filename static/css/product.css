@@ -60,7 +60,7 @@
   
   .product-price {
     font-size: 1.6rem;
-    padding-bottom: 2.4rem;
+    padding-bottom: 2.2rem;
   }
   .products-text-box {
     padding: 1.6rem 0;
@@ -69,4 +69,23 @@
     font-size: 2rem;
     font-weight: 500;
     padding-bottom: 0.75rem;
+  }
+
+  .btn-product {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 1.6rem 3.2rem;
+    display: inline-block;
+    
+    transition: all 0.3s;
+    background-color: transparent;
+    border: #332f54 2px solid;
+    color: #332f54;
+  }
+  
+  
+  .btn-product:hover {
+    background-color: #332f54;
+    color: #fff;
   }
