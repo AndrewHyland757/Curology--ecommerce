@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+    {% load static %}
+    
+
+    {% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/cart.css' %}">
+    {% endblock %}
+    {% block content %}
+
+   
+ 
+<main class="shopping-cart">
+    
+    <div class="heading-container">
+        <h2 class="heading-section">Your Cart</h2>
+      </div>
+
+
+    <div class="cart-item">
+
+        <div class="cart-left-container">
+            
+            <img src="{{ product.image.url }}"  alt="">
+            <div class="details-box>">
+            <h2 class="item-title">{{product.title}}</h2>
+            <p class="cart-price">{{product.short_description}}</p>
+            <p class="cart-price">€{{product.price}}</p>
+            </div>
+        </div>
+
+
+        <div class="cart-right-container">
+
+            <input class="product-qty" type="number" name="product-qty">
+
+            <div class="cart-btn-box">
+                <button class="btn-cart">Update</button>
+                <button class="btn-cart">Delete</button>
+            </div>
+           
+
+        </div>
+    </div>
+</main>      
+
+{% endblock %} 
+
+<!--
+
+<main class="shopping-cart">
+    
+    <div class="heading-container">
+        <h2 class="heading-section">Your Cart</h2>
+      </div>
+
+
+    <div class="cart-item">
+
+        <div class="cart-left-container">
+            
+            <img src="{% static 'media/images/products/product-1.jpg' %}"  alt="">
+            <div class="details-box>">
+            <h2 class="item-title">Product 1</h2>
+            <p class="cart-price">Short description</p>
+            <p class="cart-price">€20.00</p>
+            </div>
+        </div>
+
+
+        <div class="cart-right-container">
+
+            <input class="product-qty" type="number" name="product-qty">
+
+            <div class="cart-btn-box">
+                <button class="btn-cart">Update</button>
+                <button class="btn-cart">Delete</button>
+            </div>
+           
+
+        </div>
+    </div>
+</main>
+
+
+
+    -->
+        
+   
+
+   
